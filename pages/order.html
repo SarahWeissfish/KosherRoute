@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>הזמנה</title>
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/order.css">
+</head>
+
+<body>
+  <header>
+    <div id="header" class="flex">
+        <img id="header_mobail" src="../images/dots (1).png" alt="תפריט">
+        <div id="logo"></div>
+        <ul id="main_list" class="flex">
+            <li class="menu" id="main"><a href="../index.html">ראשי</a> </li>
+            <li class="menu" id="flight">היעדים שלנו
+                <ul class="tooltip" id="tooltip_flight">
+                    <li><a href="hotels/‏‏hotel_USA.html">ארה"ב</a></li>
+                    <li><a href="hotels/‏‏hotel_switzerland.html">שוויץ</a></li>
+                    <li><a href="hotels/hotel_batumi.html">גאורגיה</a></li>
+                    <li><a href="hotels/hotel_dubai.html">דובאי</a></li>
+                    <li><a href="hotels/‏‏hotel_tahiland.html">תאילנד</a></li> 
+                </ul>
+            </li>
+            <li class="menu" id="vacation">חבילות נופש 
+                <ul class="tooltip" id="tooltip_hotels">
+                    <li><a href="flights.html #Usa">ארה"ב</a></li>
+                    <li><a href="flights.html #Switzerland">שוויץ</a></li>
+                    <li><a href="flights.html #Georgia">גאורגיה</a></li>
+                    <li><a href="flights.html #Dubay">דובאי</a></li>
+                    <li><a href="flights.html #Tailand">תאילנד</a></li>
+                </ul>
+            </li>
+            <li class="menu" id="resteraunt"><a href="Recommendations.html">לקוחות ממליצים</a>  
+            </li>
+            <li class="menu" id="kosher"><a href="Kashrot.html">כשרות</a></li>
+            <li  ><a href="#"><img id="botten_search" src="../images/loupe.png" title="חיפוש"></a>
+                <div id="botten_search_hover"></div>
+            </li>
+        </ul>
+        <a href="#" id="conect"> התחברות |הרשמה</a>  
+    </div>
+</header>
+  <container>
+    <aside>
+      <div id="side_bar" class="flex column">
+        <h2 id="create_vacation">צור את החופשה הבאה שלך!</h2>
+        <div id="side-bar_select" class="column_row">
+          <h3>באיזו חופשה תבחר?</h3>
+          <form action="/action_page.php">
+            <input type="radio" id="batumi" name="vaction" value="batumi" autofocus>
+            <label for="batumi">בטומי 2023</label><br>
+            <input type="radio" id="dubai" name="vaction" value=" dubai">
+            <label for="dubai">פסח בדובאי</label><br>
+            <input type="radio" id="tahiland" name="vaction" value=" tahiland">
+            <label for="thailand">קיץ תאילנדי</label><br>
+            <input type="radio" id="newyork" name="vaction" value="newyork ">
+            <label for="newyork">בין הזמנים משפחתי בניו יורק</label><br>
+            <input type="radio" id="swise" name="vaction" value="swise">
+            <label for="swise">חופשת סקי באלפים השוויצרים</label><br>
+
+            <h3>ממתי עד מתי:</h3>
+            <form action="/action_page.php">
+              <label for="from">מ:</label>
+              <input type="date" id="from" name="from"><br>
+              <label for="to">עד:</label>
+              <input type="date" id="to" name="to">
+              <h3>אנחנו נדאג לכם ל:</h3>
+              <input type="checkbox" id="driver" name="driver" value="driver">
+              <label for="driver"> העברות</label><br>
+              <input type="checkbox" id="hotel" name="hotel" value="hotel">
+              <label for="hotel">מלון</label><br>
+              <input type="checkbox" id="food" name="food" value="food">
+              <label for="food"> ארוחות גורמה</label><br>
+              <input type="checkbox" id="attractions" name="attractions" value="attractions">
+              <label for="attractions"> אטרקציות</label><br><br>
+              <h2>את מי תקחו איתכם?</h2>
+              <label for="elders">מבוגרים:</label>
+              <input type="number" id="elders" name="elders" min="0" max="15"><br>
+              <label for="adults">ילדים מתחת גיל 18:</label>
+              <input type="number" id="adults" name="adults" min="0" max="15"><br>
+              <label for="infants">ילדים מתחת גיל 5:</label>
+              <input type="number" id="infants" name="infants" min="0" max="15"><br><br>
+              <input type="reset">
+            </form>
+            <a href="# ">
+              <h2>מוכנים להמריא??</h2>
+            </a>
+          </form>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <main_container>
+      <div id="details_form" class="flex column forms">
+        <h2 class="mini_title">פרטים אישיים </h2>
+        <div id="name" class="flex myRow">
+          <input type="text" id="fname" class="name" name="fname" placeholder="שם פרטי" required>
+          <input type="text" id="lname" class="name" name="lname" placeholder="שם משפחה" required>
+          <input type="text" id="addres" class="name" name="addres" placeholder="כתובת" required>
+          <input type="tel" id="phone" class="name" name="phone" placeholder="טלפון"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+          <input type="tel" id="Mphone" class="name" name="Mphone" placeholder="פלאפון"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+          <input type="email" id="email" class="name" placeholder="כתובת מייל" required>
+          <input type="submit" id="submit" value="אישור">
+        </div>
+      </div>
+      <div id="forms_pay" class="flex column ">
+        <h2 class="mini_title">הרשמה</h2>
+        <div id="inner" class="flex myRow">
+          <div  class="files"class="flex column forms">
+            <h2 class=credit_detail>הטפסים הנדרשים</h2>
+            <label for="passport">צילום דרכון</label><br>
+            <input type="file" style="display: none;" class="Pform" id="passport" name="pasport" value="דרכון" required><br>
+            <label for="insurance">ביטוח נסיעות</label><br>
+            <input type="file" style="visibility: hidden;" class="Pform" id="insurance" name="insurance" required><br><br>
+          </div>
+          <div class="files" class="flex column forms">
+            <h4 class="credit_detail">הזן פרטי כרטיס אשראי</h4>
+            <form action="/action_page.php">
+              <label for="card_number">מס'כרטיס אשראי</label><br>
+              <input type="text" id="card_number" name="card_number" pattern="[1-9]{16}" title="מספר לא חוקי"
+                placeholder="----/----/----/----/" required><br><br>
+              <label for="card_date">תוקף</label><br>
+              <input type="text" id="card_date" name="card_date" pattern="[1-9]{4}" title="תאריך לא חוקי"
+                placeholder="mm/yy" required><br><br>
+              <label for="card_code">3 ספרות בגב הכרטיס</label><br>
+              <input type="text" id="card_code" name="card_code" pattern="[1-9]{3}" title="3 ספרות בגב הכרטיס"
+                placeholder="cvv" required><br><br>
+            </form>
+          </div>
+        </div>
+        <input type="button" id="continue" class="Pform" value="המשך"
+        onclick="alert('קיימת תקלה זמנית במערכת הסליקה אנא צרו קשר עם התמיכה הטכנית')" value="לתשלום">
+      </div>
+    </main_container>
+    </main>
+  </container>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+
+.hotel{width:100%;
+    align-items: flex-end;
+    margin-top:8%;
+    position: relative;
+    }
+
+.hotel_img_titel{
+    color: rgba(255, 255, 255, 0.2);
+    font-family: "Bebas Neue";
+    font-size: 200px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    position: absolute;
+    left: 0;
+    width: fit-content;
+    z-index: 1;}
+#hotel_img_titel_last{
+    bottom:-18%;
+}
+#our_rooms{color: rgb(235 127 27);}
+
+.loop{
+    width: 100%; 
+    position: absolute;
+    top:10%;}
+.text{width: 30%;}
+h2{margin: 0 10px;
+    color: white;
+    text-align: left;
+    font-size: 110px;
+}
+h3{
+color: rgb(235 127 27);
+font-size: 50px;
+margin:3%;
+text-align: left;}
+.hotel_img{width: 70%;border-radius: 0 50px 0 50px;
+position: relative;}
+@media(max-width: 1340px){
+    #hotel_mane h2{display: none;}
+    h2{font-size: 80px;}}
+@media(max-width: 1240px){
+    h2{font-size: 60px;}}
+@media(max-width: 870px){
+    .hotel_img_titel{display: none;}
+    .hotel_img_titel_2{display: none;}
+    h2{font-size: 50px;}
+    h3{font-size: 32px;}
+}
+@media(max-width: 700px){ 
+    h3{font-size: 20px;}
+    h2{font-size: 30px;}
+}

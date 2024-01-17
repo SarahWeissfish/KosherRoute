@@ -1,0 +1,56 @@
+* { box-sizing:content-box;}
+.wrap{justify-content: right;}
+#background_img h1{color:  rgb(9, 2, 62);font-size: 180px;-webkit-text-stroke-width:0;}
+.title{position: relative;}
+.title::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color:white;
+    width: 100%;
+    top: 52px;
+    z-index: -1;
+    left: 0;}
+h2{font-size: 80px;
+    color: white;
+    }
+.Enlarged_image:hover .Enlarged_image_tooltip{
+    opacity: 1;
+    transform: none }
+.datailes_air{      
+    height: 5px;  
+    align-items: center;}
+.Enlarged_image_tooltip{
+    width: 300px;
+    height:200px;
+    background-color: rgba(255, 255, 255,0.65);
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.6s;
+    transform: scaley(0);
+    transform-origin:bottom;}
+.datailes_air_img{
+    height: 34px; 
+    width: 32px;    
+    margin: 30px 15px}
+#background_img{
+    height: 50vh; 
+    background-image: url(../images/ari.jpg);
+    font:110px italic bold;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50px;
+    padding: 80px 0 0 0; 
+    background-position-x: 100%;
+}
+span{background-color:rgb(9, 2, 62) ;}
+.datailes_air p{
+    font-weight: 800;
+    font-size: 20px;
+}
+@media(max-width: 700px){ 
+    #background_img{height: fit-content;}
+    #background_img h1{margin: 20px;font-size:100px; }
+    span{font-size: 60px;}}
